@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1,
+    "tema": "Lógica",
+    "dificuldade": "facil",
+    "enunciado": "Qual conectivo lógico corresponde a 'e'?",
+    "alternativas": {
+      "A": "Conjunção",
+      "B": "Disjunção",
+      "C": "Implicação",
+      "D": "Negação"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 2,
+    "tema": "Lógica",
+    "dificuldade": "facil",
+    "enunciado": "A negação de (Verdadeiro) é:",
+    "alternativas": {
+      "A": "Verdadeiro",
+      "B": "Falso",
+      "C": "V e F",
+      "D": "Indefinido"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 3,
+    "tema": "Lógica",
+    "dificuldade": "medio",
+    "enunciado": "A tabela-verdade de 'A -> B' é falsa quando:",
+    "alternativas": {
+      "A": "A é F e B é V",
+      "B": "A é V e B é F",
+      "C": "A é F e B é F",
+      "D": "A é V e B é V"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 4,
+    "tema": "Lógica",
+    "dificuldade": "medio",
+    "enunciado": "Qual é uma tautologia clássica?",
+    "alternativas": {
+      "A": "A ∧ ¬A",
+      "B": "A ∨ ¬A",
+      "C": "A -> ¬A",
+      "D": "¬(A ∨ A)"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 5,
+    "tema": "Lógica",
+    "dificuldade": "dificil",
+    "enunciado": "Se (A -> B) e (B -> C), então (A -> C) é um exemplo de:",
+    "alternativas": {
+      "A": "Contradição",
+      "B": "Silogismo hipotético",
+      "C": "Modus tollens",
+      "D": "Dilema"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 6,
+    "tema": "Busca",
+    "dificuldade": "facil",
+    "enunciado": "Busca em largura (BFS) usa qual estrutura?",
+    "alternativas": {
+      "A": "Pilha",
+      "B": "Fila",
+      "C": "Árvore",
+      "D": "Heap"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 7,
+    "tema": "Busca",
+    "dificuldade": "facil",
+    "enunciado": "Busca em profundidade (DFS) usa tipicamente:",
+    "alternativas": {
+      "A": "Pilha",
+      "B": "Fila",
+      "C": "Tabela hash",
+      "D": "Grafo"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 8,
+    "tema": "Busca",
+    "dificuldade": "medio",
+    "enunciado": "O A* é ótimo se o heurístico h(n) for:",
+    "alternativas": {
+      "A": "Superestimado",
+      "B": "Admissível",
+      "C": "Constante",
+      "D": "Nulo"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 9,
+    "tema": "Busca",
+    "dificuldade": "medio",
+    "enunciado": "Uniform-Cost Search prioriza nós por:",
+    "alternativas": {
+      "A": "Profundidade",
+      "B": "h(n)",
+      "C": "Custo g(n)",
+      "D": "Aleatoriedade"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 10,
+    "tema": "Busca",
+    "dificuldade": "dificil",
+    "enunciado": "Qual condição garante consistência (monotônica) de uma heurística?",
+    "alternativas": {
+      "A": "h(n) ≤ h*(n)",
+      "B": "h(n) ≥ h*(n)",
+      "C": "h(n) ≤ c(n,a,n') + h(n')",
+      "D": "h(n) = 0"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 11,
+    "tema": "Probabilidade",
+    "dificuldade": "facil",
+    "enunciado": "Soma de probabilidades de todos os eventos elementares em um espaço amostral é:",
+    "alternativas": {
+      "A": "0",
+      "B": "1",
+      "C": "Entre 0 e 1",
+      "D": "Depende"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 12,
+    "tema": "Probabilidade",
+    "dificuldade": "facil",
+    "enunciado": "Se A e B são independentes, então P(A ∩ B) =",
+    "alternativas": {
+      "A": "P(A)+P(B)",
+      "B": "P(A)P(B)",
+      "C": "P(A|B)",
+      "D": "P(A)-P(B)"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 13,
+    "tema": "Probabilidade",
+    "dificuldade": "medio",
+    "enunciado": "A esperança de uma variável aleatória X discreta é:",
+    "alternativas": {
+      "A": "Σ x_i",
+      "B": "Σ p_i",
+      "C": "Σ x_i p_i",
+      "D": "max(x_i)"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 14,
+    "tema": "Probabilidade",
+    "dificuldade": "medio",
+    "enunciado": "A variância Var(X) é:",
+    "alternativas": {
+      "A": "E[X]",
+      "B": "E[(X−E[X])^2]",
+      "C": "E[X^2]",
+      "D": "sqrt(E[X])"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 15,
+    "tema": "Probabilidade",
+    "dificuldade": "dificil",
+    "enunciado": "Teorema de Bayes expressa P(A|B) como:",
+    "alternativas": {
+      "A": "P(B|A)P(A)/P(B)",
+      "B": "P(A)P(B)",
+      "C": "P(A)/P(B)",
+      "D": "P(B)/P(A)"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 16,
+    "tema": "Redes Neurais",
+    "dificuldade": "facil",
+    "enunciado": "Função que introduz não linearidade no neurônio:",
+    "alternativas": {
+      "A": "Função de ativação",
+      "B": "Perda",
+      "C": "Otimizador",
+      "D": "BatchNorm"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 17,
+    "tema": "Redes Neurais",
+    "dificuldade": "facil",
+    "enunciado": "Retropropagação ajusta:",
+    "alternativas": {
+      "A": "Dados de treino",
+      "B": "Pesos",
+      "C": "Taxa de aprendizado automaticamente",
+      "D": "Número de camadas"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 18,
+    "tema": "Redes Neurais",
+    "dificuldade": "medio",
+    "enunciado": "Qual função de ativação ajuda com saturação menos severa que sigmoid?",
+    "alternativas": {
+      "A": "ReLU",
+      "B": "Passo",
+      "C": "Linear",
+      "D": "Tanh"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 19,
+    "tema": "Redes Neurais",
+    "dificuldade": "medio",
+    "enunciado": "Overfitting ocorre quando o modelo:",
+    "alternativas": {
+      "A": "Generaliza bem",
+      "B": "É muito simples",
+      "C": "Memoriza o treino",
+      "D": "Usa regularização"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 20,
+    "tema": "Redes Neurais",
+    "dificuldade": "dificil",
+    "enunciado": "Dropout atua:",
+    "alternativas": {
+      "A": "Aumentando número de parâmetros",
+      "B": "Zerando aleatoriamente ativações",
+      "C": "Diminuindo taxa de aprendizado",
+      "D": "Aumentando batch"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 21,
+    "tema": "Ética em IA",
+    "dificuldade": "facil",
+    "enunciado": "Viés algorítmico refere-se a:",
+    "alternativas": {
+      "A": "Erros de hardware",
+      "B": "Licenças de software",
+      "C": "Custos de nuvem",
+      "D": "Preferências sistemáticas nos resultados"
+    },
+    "resposta_correta": "D"
+  },
+  {
+    "id": 22,
+    "tema": "Ética em IA",
+    "dificuldade": "medio",
+    "enunciado": "Transparência em IA busca:",
+    "alternativas": {
+      "A": "Ocultar decisões",
+      "B": "Explicar decisões",
+      "C": "Reduzir custos",
+      "D": "Aumentar latência"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 23,
+    "tema": "Ética em IA",
+    "dificuldade": "medio",
+    "enunciado": "LGPD no Brasil foca principalmente em:",
+    "alternativas": {
+      "A": "Criptomoedas",
+      "B": "Direitos autorais",
+      "C": "Proteção de dados pessoais",
+      "D": "Concorrência"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 24,
+    "tema": "Ética em IA",
+    "dificuldade": "dificil",
+    "enunciado": "Princípio de responsabilidade em IA envolve:",
+    "alternativas": {
+      "A": "Atribuir autores e consequências",
+      "B": "Aumentar número de camadas",
+      "C": "Trocar ativação",
+      "D": "Diminuir epochs"
+    },
+    "resposta_correta": "A"
+  }
+]

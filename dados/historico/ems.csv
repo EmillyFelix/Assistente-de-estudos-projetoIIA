@@ -1,0 +1,10 @@
+momento,aluno_id,pergunta_id,acertou,tema,dificuldade,tempo_segundos
+2025-10-30T12:43:11,ems,6,1,Busca,facil,25.733
+2025-10-30T12:43:51,ems,10,0,Busca,dificil,40.213
+2025-10-30T12:44:13,ems,9,1,Busca,medio,21.929
+2025-10-30T12:44:20,ems,7,1,Busca,facil,6.991
+2025-10-30T12:44:36,ems,8,1,Busca,medio,16.349
+2025-10-30T12:46:22,ems,21,1,Ética em IA,facil,31.332
+2025-10-30T12:46:29,ems,22,1,Ética em IA,medio,6.953
+2025-10-30T12:46:37,ems,23,1,Ética em IA,medio,7.974
+2025-10-30T12:46:57,ems,24,1,Ética em IA,dificil,19.882
