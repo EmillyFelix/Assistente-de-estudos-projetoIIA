@@ -1,5 +1,5 @@
 
-# Assistente de Estudos — Versão em Português (MVP: Regras + Heurísticas)
+# Assistente de Estudos —  (MVP: Regras + Heurísticas)
 
 Aplicativo simples em **Python** com **linha de comando** e **interface Streamlit**.
 Apresenta perguntas de múltipla escolha, registra acertos/erros/tempo por aluno e recomenda próximos temas com regras heurísticas.
