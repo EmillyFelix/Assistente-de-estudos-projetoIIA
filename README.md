@@ -107,6 +107,7 @@ assistente_estudos/
 │  └─ teste_recomendador.py
 ├─ requirements.txt
 └─ README.md
+```
 
 ## Resultados e Demonstração
 
