@@ -2,8 +2,8 @@
 
 **Disciplina:** Introdução à Inteligência Artificial  
 **Semestre:** 2025.2  
-**Professor:** [André Luis Fonseca Faustino]  
-**Turma:** [T03 e T04]
+**Professor:** André Luis Fonseca Faustino
+**Turma:** T03 e T04
 
 ## Integrantes do Grupo
 * Emilly Vitória Rodrigues Gomes Félix (20230067429)
@@ -45,8 +45,9 @@ streamlit run src/app_streamlit.py
 
 * Iniciar uma sessão de estudo;
 
-* Acompanhar o desempenho na aba 📈 Desempenho:
 
+* Acompanhar o desempenho na aba  Desempenho:
+  
 * Tabela por tema (acertos, erros, taxa de acerto, tempo médio);
 
 * Gráfico de barras (taxa de acerto por tema);
@@ -110,11 +111,20 @@ assistente_estudos/
 
 ## Resultados e Demonstração
 
+<img width="1863" height="841" alt="image" src="https://github.com/user-attachments/assets/88fbb606-18d4-4797-a5d5-55962cb6e2ea" />
+
+<img width="470" height="844" alt="image" src="https://github.com/user-attachments/assets/2d0c5c65-bb92-42b3-bf2b-8dbb84ceed0e" />
+
+<img width="493" height="829" alt="image" src="https://github.com/user-attachments/assets/34faac78-a3ea-46f6-90a5-5c9924d2bd8d" />
+
+-> PDF com os gráficos:
+<img width="1902" height="855" alt="image" src="https://github.com/user-attachments/assets/5f3c243d-9f87-4c0b-bfc0-522204c67577" />
+
 [Adicione prints da aplicação em execução ou gráficos com os resultados do modelo/agente. Se for uma aplicação Web, coloque um print da interface.]
 
 ## Referências
 
-  * Documentação do Streamlit: [https://docs.streamlit.io]
-  * Documentação do pandas: [https://pandas.pydata.org/docs/]
-  * Documentação do matplotlib:[https://matplotlib.org/]
+  * Documentação do Streamlit: https://docs.streamlit.io
+  * Documentação do pandas: https://pandas.pydata.org/docs/
+  * Documentação do matplotlib:https://matplotlib.org/
   * Materiais da disciplina de Inteligência Artificial (modelo PEAS, agentes e métricas de desempenho).
