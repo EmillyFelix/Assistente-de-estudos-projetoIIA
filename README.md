@@ -108,18 +108,16 @@ assistente_estudos/
 ├─ requirements.txt
 └─ README.md
 
-
-## Resultados e Demonstração
-
 ## Resultados e Demonstração
 
 ![Tela inicial streamlit](prints/image.png)
+
 ![Tela de desempenho](prints/desempenho.png)
+
 ![Gráfico e avaliação do agente](prints/pizzagraph.png)
+
 ![PDF](prints/pdf.png)
 
-
-[Adicione prints da aplicação em execução ou gráficos com os resultados do modelo/agente. Se for uma aplicação Web, coloque um print da interface.]
 
 ## Referências
 
