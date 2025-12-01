@@ -20,7 +20,7 @@ def fazer_pergunta(pergunta: dict):
     return bool(correto), fim - inicio, resposta
 
 def main():
-    parser = argparse.ArgumentParser(description="Sessão de estudo (CLI) — Português")
+    parser = argparse.ArgumentParser(description="Sessão de estudo (CLI)")
     parser.add_argument("--aluno-id", required=True, help="Identificador do aluno (ex.: ana)")
     parser.add_argument("--num-perguntas", type=int, default=5)
     parser.add_argument("--tema", default=None)

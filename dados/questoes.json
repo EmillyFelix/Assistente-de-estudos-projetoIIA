@@ -310,5 +310,474 @@
       "D": "Diminuir epochs"
     },
     "resposta_correta": "A"
+  },
+  {
+    "id": 25,
+    "tema": "Agentes Inteligentes",
+    "dificuldade": "facil",
+    "enunciado": "Um agente é considerado racional quando:",
+    "alternativas": {
+      "A": "Age de forma aleatória",
+      "B": "Maximiza a performance esperada com base nas percepções",
+      "C": "Imita o comportamento humano",
+      "D": "Possui sensores e atuadores físicos"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 26,
+    "tema": "Agentes Inteligentes",
+    "dificuldade": "medio",
+    "enunciado": "Qual é o principal objetivo da função de desempenho em um agente?",
+    "alternativas": {
+      "A": "Definir recompensas",
+      "B": "Avaliar quão bem o agente cumpre sua meta",
+      "C": "Controlar sensores",
+      "D": "Reduzir custo computacional"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 27,
+    "tema": "Agentes Inteligentes",
+    "dificuldade": "dificil",
+    "enunciado": "Em um ambiente parcialmente observável e estocástico, qual modelo de agente é mais adequado?",
+    "alternativas": {
+      "A": "Agente reativo simples",
+      "B": "Agente baseado em modelo",
+      "C": "Agente com função reflexiva fixa",
+      "D": "Agente determinístico"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 28,
+    "tema": "Heurísticas",
+    "dificuldade": "facil",
+    "enunciado": "Em busca heurística, h(n) representa:",
+    "alternativas": {
+      "A": "O custo real do caminho até o objetivo",
+      "B": "A estimativa do custo restante até o objetivo",
+      "C": "A profundidade do nó n",
+      "D": "O custo total do caminho encontrado"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 29,
+    "tema": "Heurísticas",
+    "dificuldade": "medio",
+    "enunciado": "Se h(n) nunca superestima o custo real, ela é:",
+    "alternativas": {
+      "A": "Consistente",
+      "B": "Admissível",
+      "C": "Pessimista",
+      "D": "Dominante"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 30,
+    "tema": "Heurísticas",
+    "dificuldade": "dificil",
+    "enunciado": "Entre duas heurísticas h1 e h2 admissíveis, h1 domina h2 quando:",
+    "alternativas": {
+      "A": "h1(n) ≥ h2(n) para todo n",
+      "B": "h1(n) ≤ h2(n) para todo n",
+      "C": "h1 é mais rápida de calcular",
+      "D": "h1 tem menor erro médio"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 31,
+    "tema": "Aprendizado de Máquina",
+    "dificuldade": "facil",
+    "enunciado": "O conjunto usado para ajustar os parâmetros do modelo é:",
+    "alternativas": {
+      "A": "Conjunto de teste",
+      "B": "Conjunto de validação",
+      "C": "Conjunto de treinamento",
+      "D": "Conjunto de produção"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 32,
+    "tema": "Aprendizado de Máquina",
+    "dificuldade": "medio",
+    "enunciado": "A regularização tem como principal objetivo:",
+    "alternativas": {
+      "A": "Aumentar o erro de treino",
+      "B": "Evitar overfitting",
+      "C": "Melhorar a precisão no treino",
+      "D": "Reduzir o número de amostras"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 33,
+    "tema": "Aprendizado de Máquina",
+    "dificuldade": "dificil",
+    "enunciado": "O gradiente descendente estocástico (SGD) difere do batch gradient descent por:",
+    "alternativas": {
+      "A": "Atualizar os pesos após cada amostra",
+      "B": "Calcular o gradiente exato",
+      "C": "Usar toda a base de dados por iteração",
+      "D": "Dispensar função de custo"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 34,
+    "tema": "Lógica",
+    "dificuldade": "dificil",
+    "enunciado": "O argumento: 'Se chove, então a rua molha. Choveu. Logo, a rua molhou.' é um exemplo de:",
+    "alternativas": {
+      "A": "Silogismo hipotético",
+      "B": "Modus ponens",
+      "C": "Modus tollens",
+      "D": "Dilema"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 35,
+    "tema": "Probabilidade",
+    "dificuldade": "dificil",
+    "enunciado": "Se P(A)=0.4, P(B)=0.5 e P(A∩B)=0.2, então P(A∪B)=",
+    "alternativas": {
+      "A": "0.9",
+      "B": "0.7",
+      "C": "0.6",
+      "D": "0.3"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 36,
+    "tema": "Aprendizado de Reforço",
+    "dificuldade": "facil",
+    "enunciado": "No aprendizado por reforço, o agente aprende por meio de:",
+    "alternativas": {
+      "A": "Exemplos rotulados",
+      "B": "Recompensas e punições",
+      "C": "Regras fixas",
+      "D": "Dados históricos"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 37,
+    "tema": "Aprendizado de Reforço",
+    "dificuldade": "medio",
+    "enunciado": "A política π(s) define:",
+    "alternativas": {
+      "A": "A probabilidade de cada ação em um estado",
+      "B": "A função de recompensa",
+      "C": "O valor esperado de retorno",
+      "D": "O número de episódios"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 38,
+    "tema": "Aprendizado de Reforço",
+    "dificuldade": "dificil",
+    "enunciado": "No método Q-learning, a atualização de Q(s,a) depende de:",
+    "alternativas": {
+      "A": "Apenas do estado atual",
+      "B": "Do par (s,a), recompensa e valor máximo futuro",
+      "C": "Somente da política π(s)",
+      "D": "Do histórico completo de ações"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 39,
+    "tema": "Ética em IA",
+    "dificuldade": "facil",
+    "enunciado": "O princípio da justiça em IA busca:",
+    "alternativas": {
+      "A": "Favorecer determinados grupos",
+      "B": "Garantir tratamento equitativo entre usuários",
+      "C": "Aumentar eficiência técnica",
+      "D": "Eliminar totalmente o erro"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 40,
+    "tema": "Ética em IA",
+    "dificuldade": "dificil",
+    "enunciado": "O conceito de 'explicabilidade' em IA refere-se a:",
+    "alternativas": {
+      "A": "Capacidade de o sistema justificar suas decisões",
+      "B": "Nível de eficiência do modelo",
+      "C": "Taxa de erro em testes",
+      "D": "Complexidade algorítmica"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 41,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "facil",
+    "enunciado": "O Teorema de Bayes relaciona qual tipo de probabilidade?",
+    "alternativas": {
+      "A": "Probabilidade condicional e marginal",
+      "B": "Probabilidade simples e composta",
+      "C": "Probabilidade conjunta e total",
+      "D": "Probabilidade frequencial e subjetiva"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 42,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "facil",
+    "enunciado": "A fórmula básica do Teorema de Bayes é:",
+    "alternativas": {
+      "A": "P(A|B) = P(A) + P(B)",
+      "B": "P(A|B) = P(B|A)P(A)/P(B)",
+      "C": "P(A|B) = P(A)P(B|A)",
+      "D": "P(A|B) = P(A∩B)/P(A)"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 43,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "facil",
+    "enunciado": "No Teorema de Bayes, o termo P(A) é chamado de:",
+    "alternativas": {
+      "A": "Verossimilhança",
+      "B": "Evidência",
+      "C": "Prior (probabilidade a priori)",
+      "D": "Posterior"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 44,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "medio",
+    "enunciado": "Em P(A|B) = P(B|A)P(A)/P(B), o termo P(B) representa:",
+    "alternativas": {
+      "A": "A probabilidade total do evento B ocorrer",
+      "B": "A probabilidade condicional de B dado A",
+      "C": "A evidência ignorada no cálculo",
+      "D": "A média das probabilidades de A e B"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 45,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "medio",
+    "enunciado": "O Teorema de Bayes é útil principalmente para:",
+    "alternativas": {
+      "A": "Prever eventos determinísticos",
+      "B": "Atualizar crenças com base em novas evidências",
+      "C": "Eliminar incertezas em sistemas lógicos",
+      "D": "Substituir probabilidades clássicas por fuzzy"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 46,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "medio",
+    "enunciado": "Se P(Doença)=0.01, P(Positivo|Doença)=0.9 e P(Positivo)=0.09, qual é P(Doença|Positivo)?",
+    "alternativas": {
+      "A": "0.10",
+      "B": "0.15",
+      "C": "0.20",
+      "D": "0.10 (10%)"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 47,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "Se P(A)=0.3, P(B|A)=0.8 e P(B|¬A)=0.2, então P(A|B) é igual a:",
+    "alternativas": {
+      "A": "0.50",
+      "B": "0.67",
+      "C": "0.75",
+      "D": "0.33"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 48,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "Para aplicar o Teorema de Bayes em múltiplas hipóteses H1, H2, ..., Hn, é necessário que:",
+    "alternativas": {
+      "A": "As hipóteses sejam mutuamente exclusivas e exaustivas",
+      "B": "As probabilidades de todas as hipóteses sejam iguais",
+      "C": "A soma das verossimilhanças seja 1",
+      "D": "Apenas uma hipótese tenha probabilidade não nula"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 49,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "No contexto de IA, o Teorema de Bayes é base para qual modelo probabilístico?",
+    "alternativas": {
+      "A": "Perceptron",
+      "B": "Naive Bayes",
+      "C": "Árvore de decisão",
+      "D": "K-means"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 50,
+    "tema": "Teorema de Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "O classificador Naive Bayes assume que:",
+    "alternativas": {
+      "A": "Os atributos são dependentes entre si",
+      "B": "Os atributos são independentes dado a classe",
+      "C": "As probabilidades não se somam a 1",
+      "D": "Cada atributo depende da média global"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 51,
+    "tema": "Naive Bayes",
+    "dificuldade": "facil",
+    "enunciado": "O classificador Naive Bayes é baseado em qual princípio?",
+    "alternativas": {
+      "A": "Teorema de Bayes e suposição de independência entre atributos",
+      "B": "Redes neurais profundas",
+      "C": "Análise de regressão linear",
+      "D": "Agrupamento k-means"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 52,
+    "tema": "Naive Bayes",
+    "dificuldade": "facil",
+    "enunciado": "O termo 'naive' no nome do algoritmo se refere ao fato de que:",
+    "alternativas": {
+      "A": "É um modelo simples de implementar",
+      "B": "Assume independência entre os atributos",
+      "C": "Ignora a probabilidade condicional",
+      "D": "Usa dados de forma aleatória"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 53,
+    "tema": "Naive Bayes",
+    "dificuldade": "facil",
+    "enunciado": "Em uma tarefa de classificação, o Naive Bayes seleciona:",
+    "alternativas": {
+      "A": "A classe com maior probabilidade posterior P(C|X)",
+      "B": "A classe com menor probabilidade condicional P(X|C)",
+      "C": "A média das probabilidades de todas as classes",
+      "D": "A primeira classe observada"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 54,
+    "tema": "Naive Bayes",
+    "dificuldade": "medio",
+    "enunciado": "No Naive Bayes, o cálculo de P(X|C) é simplificado como:",
+    "alternativas": {
+      "A": "Soma das probabilidades de cada atributo",
+      "B": "Produto das probabilidades individuais de cada atributo dado a classe",
+      "C": "Diferença entre P(X) e P(C)",
+      "D": "Divisão entre as médias dos atributos"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 55,
+    "tema": "Naive Bayes",
+    "dificuldade": "medio",
+    "enunciado": "O Gaussian Naive Bayes é mais adequado quando:",
+    "alternativas": {
+      "A": "Os atributos são categóricos",
+      "B": "Os atributos seguem uma distribuição normal (contínuos)",
+      "C": "Os atributos são binários",
+      "D": "Os dados possuem poucos exemplos"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 56,
+    "tema": "Naive Bayes",
+    "dificuldade": "medio",
+    "enunciado": "O Multinomial Naive Bayes é frequentemente usado em:",
+    "alternativas": {
+      "A": "Análise de sentimento em textos",
+      "B": "Previsão de valores contínuos",
+      "C": "Redução de dimensionalidade",
+      "D": "Análise de correlação entre variáveis"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 57,
+    "tema": "Naive Bayes",
+    "dificuldade": "medio",
+    "enunciado": "O Bernoulli Naive Bayes trabalha com atributos que:",
+    "alternativas": {
+      "A": "Podem assumir múltiplos valores discretos",
+      "B": "São contínuos e normalmente distribuídos",
+      "C": "São binários (0 ou 1, presença ou ausência)",
+      "D": "São independentes e correlacionados"
+    },
+    "resposta_correta": "C"
+  },
+  {
+    "id": 58,
+    "tema": "Naive Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "Em Naive Bayes, o problema de 'zero probability' ocorre quando:",
+    "alternativas": {
+      "A": "Um atributo nunca ocorre em uma classe durante o treino",
+      "B": "Todas as classes têm a mesma probabilidade",
+      "C": "Os dados são normalizados",
+      "D": "O número de atributos é muito grande"
+    },
+    "resposta_correta": "A"
+  },
+  {
+    "id": 59,
+    "tema": "Naive Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "A técnica de 'Laplace smoothing' é usada para:",
+    "alternativas": {
+      "A": "Aumentar o tamanho do conjunto de dados",
+      "B": "Evitar probabilidades nulas em categorias não observadas",
+      "C": "Calcular médias ponderadas dos atributos",
+      "D": "Eliminar atributos irrelevantes"
+    },
+    "resposta_correta": "B"
+  },
+  {
+    "id": 60,
+    "tema": "Naive Bayes",
+    "dificuldade": "dificil",
+    "enunciado": "Em um classificador Naive Bayes de texto, o cálculo de P(palavra|classe) é normalmente feito:",
+    "alternativas": {
+      "A": "Com base na frequência da palavra na classe",
+      "B": "Com base na média das palavras em todos os documentos",
+      "C": "Usando distância euclidiana",
+      "D": "Por regressão linear"
+    },
+    "resposta_correta": "A"
   }
+
 ]

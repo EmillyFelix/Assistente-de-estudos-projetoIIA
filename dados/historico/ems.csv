@@ -1,10 +1,27 @@
 momento,aluno_id,pergunta_id,acertou,tema,dificuldade,tempo_segundos
-2025-10-30T12:43:11,ems,6,1,Busca,facil,25.733
-2025-10-30T12:43:51,ems,10,0,Busca,dificil,40.213
-2025-10-30T12:44:13,ems,9,1,Busca,medio,21.929
-2025-10-30T12:44:20,ems,7,1,Busca,facil,6.991
-2025-10-30T12:44:36,ems,8,1,Busca,medio,16.349
-2025-10-30T12:46:22,ems,21,1,Ética em IA,facil,31.332
-2025-10-30T12:46:29,ems,22,1,Ética em IA,medio,6.953
-2025-10-30T12:46:37,ems,23,1,Ética em IA,medio,7.974
-2025-10-30T12:46:57,ems,24,1,Ética em IA,dificil,19.882
+2025-11-04T12:28:20,ems,25,1,Agentes Inteligentes,facil,0.0
+2025-11-04T12:28:32,ems,26,0,Agentes Inteligentes,medio,0.0
+2025-11-04T12:29:07,ems,27,1,Agentes Inteligentes,dificil,0.0
+2025-11-04T12:42:54,ems,23,1,Ética em IA,medio,0.0
+2025-11-04T12:43:07,ems,22,1,Ética em IA,medio,0.0
+2025-11-04T12:43:29,ems,40,1,Ética em IA,dificil,0.0
+2025-11-04T12:43:39,ems,24,1,Ética em IA,dificil,0.0
+2025-11-04T12:43:46,ems,21,1,Ética em IA,facil,0.0
+2025-11-04T14:28:37,ems,7,1,Busca,facil,29.998
+2025-11-04T14:28:42,ems,10,1,Busca,dificil,5.376
+2025-11-04T14:28:45,ems,9,1,Busca,medio,3.549
+2025-11-04T14:28:49,ems,8,1,Busca,medio,3.292
+2025-11-04T14:28:51,ems,6,1,Busca,facil,1.95
+2025-11-28T16:08:43,ems,25,1,Agentes Inteligentes,facil,7.481
+2025-11-28T16:08:58,ems,26,0,Agentes Inteligentes,medio,14.484
+2025-11-28T16:09:05,ems,27,0,Agentes Inteligentes,dificil,7.372
+2025-11-28T16:23:01,ems,44,1,Teorema de Bayes,medio,9.72
+2025-11-28T16:23:37,ems,46,0,Teorema de Bayes,medio,35.909
+2025-11-28T16:23:39,ems,47,0,Teorema de Bayes,dificil,2.472
+2025-11-28T16:44:57,ems,46,1,Teorema de Bayes,medio,4.354
+2025-11-28T16:45:30,ems,48,0,Teorema de Bayes,dificil,33.127
+2025-11-28T16:45:51,ems,45,1,Teorema de Bayes,medio,21.115
+2025-11-28T16:45:56,ems,44,1,Teorema de Bayes,medio,4.851
+2025-11-28T16:47:21,ems,41,1,Teorema de Bayes,facil,85.017
+2025-11-28T16:58:57,ems,26,1,Agentes Inteligentes,medio,9.666
+2025-11-28T16:59:07,ems,27,1,Agentes Inteligentes,dificil,9.239

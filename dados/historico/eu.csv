@@ -1,0 +1,6 @@
+momento,aluno_id,pergunta_id,acertou,tema,dificuldade,tempo_segundos
+2025-11-04T14:39:43,eu,42,1,Teorema de Bayes,facil,0.0
+2025-11-04T14:40:12,eu,48,0,Teorema de Bayes,dificil,0.0
+2025-11-04T14:40:23,eu,50,1,Teorema de Bayes,dificil,0.0
+2025-11-04T14:40:30,eu,43,1,Teorema de Bayes,facil,0.0
+2025-11-04T14:40:37,eu,41,0,Teorema de Bayes,facil,0.0

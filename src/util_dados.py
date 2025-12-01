@@ -62,3 +62,55 @@ def calcular_desempenho(aluno_id: str) -> pd.DataFrame:
     agrup["taxa_acerto"] = agrup["acertos"] / agrup["total"]
     colunas = ["tema","acertos","erros","taxa_acerto","total","tempo_medio_segundos"]
     return agrup[colunas].sort_values(by="taxa_acerto")
+
+def calcular_metricas_agente(
+    aluno_id: str,
+    tempo_limite_segundos: float = 60.0,
+    peso_p1: float = 0.4,
+    peso_p2: float = 0.2,
+    peso_p3: float = 0.2,
+    peso_p4: float = 0.2,
+    clareza: float = 1.0,
+    adaptacao: float = 1.0,
+) -> Dict[str, float]:
+    """Calcula as métricas globais de desempenho do agente (P1..P4 e D).
+
+    P1 – Precisão da avaliação: taxa de acerto global do aluno.
+    P2 – Eficiência de tempo: 1 - (tempo médio / tempo_limite), limitado a [0,1].
+    P3 – Clareza: nota qualitativa informada pelo usuário (0–1).
+    P4 – Adaptação: nota qualitativa informada pelo usuário (0–1).
+
+    D = 0.4*P1 + 0.2*P2 + 0.2*P3 + 0.2*P4
+    """
+    df = carregar_historico(aluno_id)
+    if df.empty:
+        p1 = 0.0
+        tempo_medio = 0.0
+    else:
+        total = len(df)
+        acertos = int(df["acertou"].sum())
+        p1 = acertos / total if total > 0 else 0.0
+        tempo_medio = float(df["tempo_segundos"].mean())
+
+    if tempo_limite_segundos > 0:
+        razao = tempo_medio / tempo_limite_segundos
+        p2 = 1.0 - razao
+    else:
+        p2 = 0.0
+
+    # Garante que fiquem no intervalo [0,1]
+    p2 = max(0.0, min(1.0, p2))
+    p3 = max(0.0, min(1.0, clareza))
+    p4 = max(0.0, min(1.0, adaptacao))
+
+    d = peso_p1 * p1 + peso_p2 * p2 + peso_p3 * p3 + peso_p4 * p4
+
+    return {
+        "P1": p1,
+        "P2": p2,
+        "P3": p3,
+        "P4": p4,
+        "D": d,
+        "taxa_acerto_global": p1,
+        "tempo_medio_segundos": tempo_medio,
+    }

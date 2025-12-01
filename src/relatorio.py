@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from .util_dados import calcular_desempenho, PASTA_BASE
 
 def main():
-    parser = argparse.ArgumentParser(description="Relatório de desempenho por tema (Português)")
+    parser = argparse.ArgumentParser(description="Relatório de desempenho por tema")
     parser.add_argument("--aluno-id", required=True)
     args = parser.parse_args()
 
