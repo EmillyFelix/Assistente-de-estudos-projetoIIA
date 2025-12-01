@@ -85,6 +85,7 @@ python -m src.executar_sessao --aluno-id ana --num-perguntas 5
 ```bash
 pytest -q
 ``` -->
+```
 
 ## Estrutura
 ```text
