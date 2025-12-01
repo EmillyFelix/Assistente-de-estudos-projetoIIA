@@ -56,8 +56,6 @@ streamlit run src/app_streamlit.py
 
 * Gráfico de pizza (distribuição de respostas por dificuldade);
 
-* Gráfico de barras (taxa de acerto por dificuldade);
-
 * Métricas do agente (P₁ precisão, P₂ eficiência no tempo, P₃ clareza, P₄ adaptação e D);
 
 * Botão para baixar relatório em PDF com os gráficos.
