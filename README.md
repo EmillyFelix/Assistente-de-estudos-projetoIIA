@@ -1,4 +1,4 @@
-# [Assistente de Estudos Inteligente Personalziado - AEIP]
+# Assistente de Estudos Inteligente Personalziado - AEIP
 
 **Disciplina:** Introdução à Inteligência Artificial  
 **Semestre:** 2025.2  
