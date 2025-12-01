@@ -111,14 +111,17 @@ assistente_estudos/
 
 ## Resultados e Demonstração
 
-<img width="1863" height="841" alt="image" src="https://github.com/user-attachments/assets/88fbb606-18d4-4797-a5d5-55962cb6e2ea" />
+## Resultados e Demonstração
 
-<img width="470" height="844" alt="image" src="https://github.com/user-attachments/assets/2d0c5c65-bb92-42b3-bf2b-8dbb84ceed0e" />
+![Print 1](https://github.com/user-attachments/assets/88fbb606-18d4-4797-a5d5-55962cb6e2ea)
 
-<img width="493" height="829" alt="image" src="https://github.com/user-attachments/assets/34faac78-a3ea-46f6-90a5-5c9924d2bd8d" />
+![Print 2](https://github.com/user-attachments/assets/2d0c5c65-bb92-42b3-bf2b-8dbb84ceed0e)
+
+![Print 3](https://github.com/user-attachments/assets/34faac78-a3ea-46f6-90a5-5c9924d2bd8d)
 
 -> PDF com os gráficos:
-<img width="1902" height="855" alt="image" src="https://github.com/user-attachments/assets/5f3c243d-9f87-4c0b-bfc0-522204c67577" />
+
+![PDF](https://github.com/user-attachments/assets/5f3c243d-9f87-4c0b-bfc0-522204c67577)
 
 [Adicione prints da aplicação em execução ou gráficos com os resultados do modelo/agente. Se for uma aplicação Web, coloque um print da interface.]
 
