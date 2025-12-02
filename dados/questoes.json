@@ -70,12 +70,12 @@
     "dificuldade": "facil",
     "enunciado": "Busca em largura (BFS) usa qual estrutura?",
     "alternativas": {
-      "A": "Pilha",
-      "B": "Fila",
+      "A": "Fila",
+      "B": "Pilha",
       "C": "Árvore",
       "D": "Heap"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 7,
@@ -97,11 +97,11 @@
     "enunciado": "O A* é ótimo se o heurístico h(n) for:",
     "alternativas": {
       "A": "Superestimado",
-      "B": "Admissível",
-      "C": "Constante",
+      "B": "Constante",
+      "C": "Admissível",
       "D": "Nulo"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 9,
@@ -135,12 +135,12 @@
     "dificuldade": "facil",
     "enunciado": "Soma de probabilidades de todos os eventos elementares em um espaço amostral é:",
     "alternativas": {
-      "A": "0",
-      "B": "1",
+      "A": "1",
+      "B": "0",
       "C": "Entre 0 e 1",
       "D": "Depende"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 12,
@@ -149,11 +149,11 @@
     "enunciado": "Se A e B são independentes, então P(A ∩ B) =",
     "alternativas": {
       "A": "P(A)+P(B)",
-      "B": "P(A)P(B)",
-      "C": "P(A|B)",
+      "B": "P(A|B)",
+      "C": "P(A)P(B)",
       "D": "P(A)-P(B)"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 13,
@@ -174,12 +174,12 @@
     "dificuldade": "medio",
     "enunciado": "A variância Var(X) é:",
     "alternativas": {
-      "A": "E[X]",
-      "B": "E[(X−E[X])^2]",
+      "A": "E[(X−E[X])^2]",
+      "B": "E[X]",
       "C": "E[X^2]",
       "D": "sqrt(E[X])"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 15,
@@ -214,11 +214,11 @@
     "enunciado": "Retropropagação ajusta:",
     "alternativas": {
       "A": "Dados de treino",
-      "B": "Pesos",
-      "C": "Taxa de aprendizado automaticamente",
+      "B": "Taxa de aprendizado automaticamente",
+      "C": "Pesos",
       "D": "Número de camadas"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 18,
@@ -253,11 +253,11 @@
     "enunciado": "Dropout atua:",
     "alternativas": {
       "A": "Aumentando número de parâmetros",
-      "B": "Zerando aleatoriamente ativações",
-      "C": "Diminuindo taxa de aprendizado",
-      "D": "Aumentando batch"
+      "B": "Diminuindo taxa de aprendizado",
+      "C": "Aumentando batch",
+      "D": "Zerando aleatoriamente ativações"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 21,
@@ -278,12 +278,12 @@
     "dificuldade": "medio",
     "enunciado": "Transparência em IA busca:",
     "alternativas": {
-      "A": "Ocultar decisões",
-      "B": "Explicar decisões",
+      "A": "Explicar decisões",
+      "B": "Ocultar decisões",
       "C": "Reduzir custos",
       "D": "Aumentar latência"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 23,
@@ -318,11 +318,11 @@
     "enunciado": "Um agente é considerado racional quando:",
     "alternativas": {
       "A": "Age de forma aleatória",
-      "B": "Maximiza a performance esperada com base nas percepções",
-      "C": "Imita o comportamento humano",
-      "D": "Possui sensores e atuadores físicos"
+      "B": "Imita o comportamento humano",
+      "C": "Possui sensores e atuadores físicos",
+      "D": "Maximiza a performance esperada com base nas percepções"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 26,
@@ -331,11 +331,11 @@
     "enunciado": "Qual é o principal objetivo da função de desempenho em um agente?",
     "alternativas": {
       "A": "Definir recompensas",
-      "B": "Avaliar quão bem o agente cumpre sua meta",
-      "C": "Controlar sensores",
+      "B": "Controlar sensores",
+      "C": "Avaliar quão bem o agente cumpre sua meta",
       "D": "Reduzir custo computacional"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 27,
@@ -344,11 +344,11 @@
     "enunciado": "Em um ambiente parcialmente observável e estocástico, qual modelo de agente é mais adequado?",
     "alternativas": {
       "A": "Agente reativo simples",
-      "B": "Agente baseado em modelo",
-      "C": "Agente com função reflexiva fixa",
-      "D": "Agente determinístico"
+      "B": "Agente com função reflexiva fixa",
+      "C": "Agente determinístico",
+      "D": "Agente baseado em modelo"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 28,
@@ -369,12 +369,12 @@
     "dificuldade": "medio",
     "enunciado": "Se h(n) nunca superestima o custo real, ela é:",
     "alternativas": {
-      "A": "Consistente",
-      "B": "Admissível",
+      "A": "Admissível",
+      "B": "Consistente",
       "C": "Pessimista",
       "D": "Dominante"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 30,
@@ -409,11 +409,11 @@
     "enunciado": "A regularização tem como principal objetivo:",
     "alternativas": {
       "A": "Aumentar o erro de treino",
-      "B": "Evitar overfitting",
-      "C": "Melhorar a precisão no treino",
-      "D": "Reduzir o número de amostras"
+      "B": "Melhorar a precisão no treino",
+      "C": "Reduzir o número de amostras",
+      "D": "Evitar overfitting"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 33,
@@ -461,11 +461,11 @@
     "enunciado": "No aprendizado por reforço, o agente aprende por meio de:",
     "alternativas": {
       "A": "Exemplos rotulados",
-      "B": "Recompensas e punições",
-      "C": "Regras fixas",
+      "B": "Regras fixas",
+      "C": "Recompensas e punições",
       "D": "Dados históricos"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 37,
@@ -500,11 +500,11 @@
     "enunciado": "O princípio da justiça em IA busca:",
     "alternativas": {
       "A": "Favorecer determinados grupos",
-      "B": "Garantir tratamento equitativo entre usuários",
-      "C": "Aumentar eficiência técnica",
-      "D": "Eliminar totalmente o erro"
+      "B": "Aumentar eficiência técnica",
+      "C": "Eliminar totalmente o erro",
+      "D": "Garantir tratamento equitativo entre usuários"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 40,
@@ -538,12 +538,12 @@
     "dificuldade": "facil",
     "enunciado": "A fórmula básica do Teorema de Bayes é:",
     "alternativas": {
-      "A": "P(A|B) = P(A) + P(B)",
-      "B": "P(A|B) = P(B|A)P(A)/P(B)",
+      "A": "P(A|B) = P(B|A)P(A)/P(B)",
+      "B": "P(A|B) = P(A) + P(B)",
       "C": "P(A|B) = P(A)P(B|A)",
       "D": "P(A|B) = P(A∩B)/P(A)"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 43,
@@ -578,11 +578,11 @@
     "enunciado": "O Teorema de Bayes é útil principalmente para:",
     "alternativas": {
       "A": "Prever eventos determinísticos",
-      "B": "Atualizar crenças com base em novas evidências",
-      "C": "Eliminar incertezas em sistemas lógicos",
+      "B": "Eliminar incertezas em sistemas lógicos",
+      "C": "Atualizar crenças com base em novas evidências",
       "D": "Substituir probabilidades clássicas por fuzzy"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 46,
@@ -630,11 +630,11 @@
     "enunciado": "No contexto de IA, o Teorema de Bayes é base para qual modelo probabilístico?",
     "alternativas": {
       "A": "Perceptron",
-      "B": "Naive Bayes",
-      "C": "Árvore de decisão",
-      "D": "K-means"
+      "B": "Árvore de decisão",
+      "C": "K-means",
+      "D": "Naive Bayes"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 50,
@@ -643,11 +643,11 @@
     "enunciado": "O classificador Naive Bayes assume que:",
     "alternativas": {
       "A": "Os atributos são dependentes entre si",
-      "B": "Os atributos são independentes dado a classe",
-      "C": "As probabilidades não se somam a 1",
+      "B": "As probabilidades não se somam a 1",
+      "C": "Os atributos são independentes dado a classe",
       "D": "Cada atributo depende da média global"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "C"
   },
   {
     "id": 51,
@@ -655,12 +655,12 @@
     "dificuldade": "facil",
     "enunciado": "O classificador Naive Bayes é baseado em qual princípio?",
     "alternativas": {
-      "A": "Teorema de Bayes e suposição de independência entre atributos",
-      "B": "Redes neurais profundas",
-      "C": "Análise de regressão linear",
-      "D": "Agrupamento k-means"
+      "A": "Redes neurais profundas",
+      "B": "Análise de regressão linear",
+      "C": "Agrupamento k-means",
+      "D": "Teorema de Bayes e suposição de independência entre atributos"
     },
-    "resposta_correta": "A"
+    "resposta_correta": "D"
   },
   {
     "id": 52,
@@ -668,12 +668,12 @@
     "dificuldade": "facil",
     "enunciado": "O termo 'naive' no nome do algoritmo se refere ao fato de que:",
     "alternativas": {
-      "A": "É um modelo simples de implementar",
-      "B": "Assume independência entre os atributos",
+      "A": "Assume independência entre os atributos",
+      "B": "É um modelo simples de implementar",
       "C": "Ignora a probabilidade condicional",
       "D": "Usa dados de forma aleatória"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "A"
   },
   {
     "id": 53,
@@ -708,11 +708,11 @@
     "enunciado": "O Gaussian Naive Bayes é mais adequado quando:",
     "alternativas": {
       "A": "Os atributos são categóricos",
-      "B": "Os atributos seguem uma distribuição normal (contínuos)",
-      "C": "Os atributos são binários",
-      "D": "Os dados possuem poucos exemplos"
+      "B": "Os atributos são binários",
+      "C": "Os dados possuem poucos exemplos",
+      "D": "Os atributos seguem uma distribuição normal (contínuos)"
     },
-    "resposta_correta": "B"
+    "resposta_correta": "D"
   },
   {
     "id": 56,
