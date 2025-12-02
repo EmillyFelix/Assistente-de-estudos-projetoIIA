@@ -63,6 +63,24 @@ def calcular_desempenho(aluno_id: str) -> pd.DataFrame:
     colunas = ["tema","acertos","erros","taxa_acerto","total","tempo_medio_segundos"]
     return agrup[colunas].sort_values(by="taxa_acerto")
 
+def carregar_historico_completo() -> pd.DataFrame:
+    """Carrega histórico de TODOS os alunos para treinar modelos de IA."""
+    historicos = []
+    
+    # Procura todos os arquivos CSV na pasta de histórico
+    for arquivo in PASTA_HISTORICO.glob("*.csv"):
+        try:
+            df = pd.read_csv(arquivo)
+            if not df.empty:
+                historicos.append(df)
+        except Exception as e:
+            print(f"Erro ao carregar {arquivo}: {e}")
+    
+    if historicos:
+        return pd.concat(historicos, ignore_index=True)
+    else:
+        return pd.DataFrame(columns=["momento","aluno_id","pergunta_id","acertou","tema","dificuldade","tempo_segundos"])
+
 def calcular_metricas_agente(
     aluno_id: str,
     tempo_limite_segundos: float = 60.0,

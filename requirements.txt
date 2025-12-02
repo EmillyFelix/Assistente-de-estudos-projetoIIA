@@ -2,3 +2,5 @@ pandas
 matplotlib
 pytest
 streamlit
+scikit-learn
+numpy
