@@ -30,7 +30,7 @@ source .venv/bin/activate
 # instalar dependências
 pip install -r requirements.txt
 ```
-
+py --version
 ## Interface Web (Streamlit)
 Interface principal para usar o agente de estudos
 
