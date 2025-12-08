@@ -116,6 +116,8 @@ assistente_estudos/
 
 ![Gráfico e avaliação do agente](prints/pizzagraph.png)
 
+![Aba o que estudar](prints/oqueEstudar.png)
+
 ![PDF](prints/pdf.png)
 
 

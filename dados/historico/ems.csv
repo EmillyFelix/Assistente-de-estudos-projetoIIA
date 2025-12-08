@@ -25,3 +25,20 @@ momento,aluno_id,pergunta_id,acertou,tema,dificuldade,tempo_segundos
 2025-11-28T16:47:21,ems,41,1,Teorema de Bayes,facil,85.017
 2025-11-28T16:58:57,ems,26,1,Agentes Inteligentes,medio,9.666
 2025-11-28T16:59:07,ems,27,1,Agentes Inteligentes,dificil,9.239
+2025-12-02T16:46:05,ems,27,1,Agentes Inteligentes,dificil,9.15
+2025-12-02T16:46:56,ems,26,1,Agentes Inteligentes,medio,43.966
+2025-12-02T16:47:42,ems,44,1,Teorema de Bayes,medio,9.023
+2025-12-02T16:47:54,ems,42,1,Teorema de Bayes,facil,8.986
+2025-12-02T16:48:07,ems,49,1,Teorema de Bayes,dificil,9.69
+2025-12-02T16:48:43,ems,50,1,Teorema de Bayes,dificil,33.92
+2025-12-02T16:48:56,ems,46,0,Teorema de Bayes,medio,7.589
+2025-12-08T15:06:56,ems,24,1,Ética em IA,dificil,21.631
+2025-12-08T15:07:02,ems,22,1,Ética em IA,medio,6.566
+2025-12-08T15:07:12,ems,40,1,Ética em IA,dificil,9.673
+2025-12-08T15:20:59,ems,27,1,Agentes Inteligentes,dificil,175.081
+2025-12-08T15:21:01,ems,26,1,Agentes Inteligentes,medio,2.823
+2025-12-08T15:21:10,ems,23,1,Ética em IA,medio,4.758
+2025-12-08T15:21:13,ems,39,1,Ética em IA,facil,3.115
+2025-12-08T15:21:16,ems,40,1,Ética em IA,dificil,3.458
+2025-12-08T15:21:20,ems,22,1,Ética em IA,medio,3.152
+2025-12-08T15:21:37,ems,24,1,Ética em IA,dificil,17.131

@@ -98,6 +98,13 @@ if "modelo_ia_inicializado" not in st.session_state:
 
 def reiniciar_sessao():
     from random import shuffle
+
+     # limpeza
+    for k in list(st.session_state.keys()):
+        if k.startswith(("respondida_", "resultado_", "escolha_", "radio_pergunta_",
+                         "btn_responder_", "btn_proxima_", "btn_finalizar_")):
+            del st.session_state[k]
+
     st.session_state.indice = 0
     st.session_state.acertos = 0
     st.session_state.fim = False
@@ -171,6 +178,10 @@ with abas[0]:
         )
         st.caption(f"Tema: **{p['tema']}** · Dificuldade: **{p['dificuldade']}**")
         
+        if st.session_state.get("ultimo_feedback"):
+            st.toast(st.session_state.ultimo_feedback)
+            st.session_state.ultimo_feedback = None
+            
         # === PREDIÇÃO DE IA ===
         if aluno_id.strip() and st.session_state.modelo_ia_inicializado:
             historico_aluno = carregar_historico(aluno_id.strip())
@@ -200,7 +211,6 @@ with abas[0]:
         
         st.write(p["enunciado"])
 
-        # Garante que o cronômetro seja iniciado ao exibir a pergunta
         if st.session_state.inicio_tempo is None:
             st.session_state.inicio_tempo = time.time()
 
@@ -220,19 +230,15 @@ with abas[0]:
             )
 
             if st.button("Responder", key=f"btn_responder_{st.session_state.indice}"):
-                # calcula o tempo gasto na questão atual
+            # calcula o tempo gasto
                 tempo_gasto = 0.0
                 if st.session_state.get("inicio_tempo") is not None:
                     tempo_gasto = time.time() - st.session_state.inicio_tempo
 
                 correto = comparar_resposta(escolha, p["resposta_correta"])
                 if correto:
-                    st.success("✅ Correto!")
                     st.session_state.acertos += 1
-                else:
-                    st.error(f"❌ Errado — resposta correta: {p['resposta_correta']}")
 
-                # registra resposta com o tempo real gasto
                 registrar_resposta(
                     aluno_id.strip(),
                     p["id"],
@@ -242,35 +248,34 @@ with abas[0]:
                     tempo_gasto,
                 )
 
-                # Marca como respondida
-                st.session_state[pergunta_respondida_key] = True
-                st.session_state[f"resultado_{st.session_state.indice}"] = correto
-                st.session_state[f"escolha_{st.session_state.indice}"] = escolha
+                idx = st.session_state.indice
+                st.session_state[f"respondida_{idx}"] = True
+                st.session_state[f"resultado_{idx}"] = correto
+                st.session_state[f"escolha_{idx}"] = escolha
+                
+                st.session_state.ultimo_feedback = ("✅ Correto!" if correto else f"❌ Errado — correta: {p['resposta_correta']}")
+
+
+                # Avanço automático
+                if idx + 1 < len(st.session_state.perguntas):
+                    st.session_state.indice += 1
+                    st.session_state.inicio_tempo = time.time()
+                else:
+                    st.session_state.fim = True
+                    st.session_state.inicio_tempo = None
+
+                st.rerun()
+
 
         else:
-            # Já respondeu - mostra resultado e botão "Próxima"
-            escolha_feita = st.session_state.get(f"escolha_{st.session_state.indice}")
             resultado = st.session_state.get(f"resultado_{st.session_state.indice}")
-            
-            # Mostra as alternativas desabilitadas
-            st.write("**Sua resposta:**")
-            for opcao in opcoes:
-                if opcao == escolha_feita:
-                    if resultado:
-                        st.success(f"✅ {opcao}) {p['alternativas'][opcao]} (Sua escolha)")
-                    else:
-                        st.error(f"❌ {opcao}) {p['alternativas'][opcao]} (Sua escolha)")
-                elif opcao == p["resposta_correta"] and not resultado:
-                    st.success(f"✅ {opcao}) {p['alternativas'][opcao]} (Correto)")
-                else:
-                    st.write(f"   {opcao}) {p['alternativas'][opcao]}")
-            
+                    
             # Botão para próxima pergunta
             if st.session_state.indice + 1 < len(st.session_state.perguntas):
                 if st.button("Próxima pergunta ➡️", key=f"btn_proxima_{st.session_state.indice}"):
                     st.session_state.indice += 1
                     st.session_state.inicio_tempo = time.time()
-                    st.rerun()
+                    st.rerun()  
             else:
                 if st.button("Finalizar Quiz 🏁", key=f"btn_finalizar_{st.session_state.indice}"):
                     st.session_state.fim = True
