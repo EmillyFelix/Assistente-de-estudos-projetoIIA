@@ -55,20 +55,18 @@ class NavegadorPrerequisitos:
         self._construir_grafo_conhecimento()
     
     def _construir_grafo_conhecimento(self):
-        # Temas e suas dependências
         conhecimentos = [
             NoConhecimento("Lógica", NivelDominio.INEXISTENTE, [], 1.0, 8.0),
-            NoConhecimento("Conjuntos", NivelDominio.INEXISTENTE, [], 1.2, 10.0),
-            NoConhecimento("Funções", NivelDominio.INEXISTENTE, ["Conjuntos"], 1.5, 12.0),
-            NoConhecimento("Álgebra", NivelDominio.INEXISTENTE, ["Lógica"], 1.3, 15.0),
-            NoConhecimento("Geometria", NivelDominio.INEXISTENTE, ["Álgebra"], 1.4, 12.0),
-            NoConhecimento("Trigonometria", NivelDominio.INEXISTENTE, ["Geometria", "Funções"], 1.8, 14.0),
-            NoConhecimento("Limites", NivelDominio.INEXISTENTE, ["Funções", "Álgebra"], 2.0, 16.0),
-            NoConhecimento("Derivadas", NivelDominio.INEXISTENTE, ["Limites"], 2.2, 18.0),
-            NoConhecimento("Integrais", NivelDominio.INEXISTENTE, ["Derivadas"], 2.5, 20.0),
-            NoConhecimento("Algoritmos", NivelDominio.INEXISTENTE, ["Lógica"], 1.6, 20.0),
-            NoConhecimento("Estruturas de Dados", NivelDominio.INEXISTENTE, ["Algoritmos"], 2.0, 25.0),
-            NoConhecimento("Programação", NivelDominio.INEXISTENTE, ["Algoritmos"], 1.8, 30.0),
+            NoConhecimento("Probabilidade", NivelDominio.INEXISTENTE, ["Lógica"], 1.2, 10.0),
+            NoConhecimento("Teorema de Bayes", NivelDominio.INEXISTENTE, ["Probabilidade"], 1.4, 12.0),
+            NoConhecimento("Naive Bayes", NivelDominio.INEXISTENTE, ["Teorema de Bayes"], 1.6, 14.0),
+            NoConhecimento("Busca", NivelDominio.INEXISTENTE, ["Lógica"], 1.3, 10.0),
+            NoConhecimento("Heurísticas", NivelDominio.INEXISTENTE, ["Busca"], 1.5, 12.0),
+            NoConhecimento("Agentes Inteligentes", NivelDominio.INEXISTENTE, ["Busca", "Lógica"], 1.7, 16.0),
+            NoConhecimento("Aprendizado de Máquina", NivelDominio.INEXISTENTE, ["Probabilidade", "Teorema de Bayes"], 2.0, 20.0),
+            NoConhecimento("Redes Neurais", NivelDominio.INEXISTENTE, ["Aprendizado de Máquina"], 2.5, 25.0),
+            NoConhecimento("Aprendizado de Reforço", NivelDominio.INEXISTENTE, ["Aprendizado de Máquina"], 2.3, 22.0),
+            NoConhecimento("Ética em IA", NivelDominio.INEXISTENTE, ["Agentes Inteligentes"], 1.1, 8.0),
         ]
         
         # Adiciona ao grafo
@@ -311,17 +309,30 @@ class NavegadorPrerequisitos:
         
         coletar_prerequisitos(tema_objetivo)
         
-        def contar_prerequisitos_nao_dominados(tema):
-            count = 0
-            for prereq in self.mapa_dependencias.get(tema, []):
-                if prereq in temas_necessarios:
-                    count += 1
-            return count
+        # Ordenação topológica (dependências primeiro)
+        caminho_ordenado = []
+        temas_restantes = temas_necessarios.copy()
         
-        temas_ordenados = sorted(temas_necessarios, 
-                                key=lambda t: contar_prerequisitos_nao_dominados(t))
+        while temas_restantes:
+            # Encontra temas sem pré-requisitos pendentes
+            proximos = []
+            for tema in temas_restantes:
+                prerequisitos_pendentes = [p for p in self.mapa_dependencias.get(tema, []) 
+                                         if p in temas_restantes]
+                if not prerequisitos_pendentes:
+                    proximos.append(tema)
+            
+            if not proximos:  # Ciclo detectado
+                break
+            
+            # Ordena por dificuldade (mais fácil primeiro)
+            proximos.sort(key=lambda t: self.grafo_conhecimento[t].dificuldade_aprendizado)
+            
+            for tema in proximos:
+                caminho_ordenado.append(tema)
+                temas_restantes.remove(tema)
         
-        return temas_ordenados
+        return caminho_ordenado
     
     def analisar_gaps_conhecimento(self, estado: EstadoAprendizagem) -> Dict[str, List[str]]:
         """

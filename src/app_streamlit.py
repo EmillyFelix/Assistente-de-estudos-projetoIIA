@@ -430,90 +430,28 @@ with abas[2]:  # 🤖 O que estudar?
                 else:
                     st.success(f"✅ Você já sabe {tema_objetivo}!")
             
-            # Exibe análise em colunas
-            col1, col2 = st.columns(2)
-            
-            with col1:
-                st.markdown("#### 📊 Como você está")
+  
+            st.markdown("#### 📊 Seu progresso")
                 
                 # Mostra só os temas que já estudou
-                estudados = {tema: nivel for tema, nivel in navegacao['estado_conhecimento'].items() 
+            estudados = {tema: nivel for tema, nivel in navegacao['estado_conhecimento'].items() 
                             if nivel != 'INEXISTENTE'}
                 
-                if estudados:
-                    for tema, nivel in estudados.items():
-                        if nivel == "DOMINADO":
-                            st.success(f"🏆 {tema} - Dominado")
-                        elif nivel == "AVANCADO":
-                            st.info(f"💪 {tema} - Quase lá")
-                        elif nivel == "INTERMEDIARIO":
-                            st.warning(f"📈 {tema} - Progredindo")
-                        elif nivel == "BASICO":
-                            st.error(f"🌱 {tema} - Começando")
-                        else:
-                            st.text(f"👶 {tema} - Iniciante")
-                else:
-                    st.info("Faça mais questões para ver seu progresso!")
-            
-            with col2:
-                st.markdown("#### 🎯 Pode estudar agora")
-                
-                # Temas disponíveis
-                if navegacao['temas_disponiveis']:
-                    for tema in navegacao['temas_disponiveis']:
-                        st.write(f"📚 {tema}")
-                else:
-                    st.info("Continue praticando os temas atuais!")
-                
-                # Tempo de estudo
-                if navegacao['tempo_gasto_horas'] > 0:
-                    st.metric("⏰ Tempo estudado", f"{navegacao['tempo_gasto_horas']:.1f}h")
-            
-            # === PREDIÇÕES DE PERFORMANCE ===
-            st.markdown("### 🎯 Modelo Preditivo de Performance")
-            st.write("O modelo Random Forest prediz seu desempenho futuro baseado em padrões de aprendizagem.")
-            
-            if st.session_state.perguntas and st.session_state.indice < len(st.session_state.perguntas):
-                # Predição para próxima questão
-                proxima_questao = st.session_state.perguntas[st.session_state.indice]
-                predicao = predizer_desempenho_aluno(
-                    aluno_id.strip(), 
-                    proxima_questao, 
-                    historico_aluno, 
-                    st.session_state.indice
-                )
-                
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.metric(
-                        "Probabilidade de Acerto",
-                        f"{predicao['prob_acerto']:.1%}",
-                        delta=None
-                    )
-                with col2:
-                    st.metric(
-                        "Tempo Estimado",
-                        f"{predicao['tempo_estimado']:.0f}s",
-                        delta=None
-                    )
-                with col3:
-                    st.metric(
-                        "Confiança da IA",
-                        f"{predicao['confianca']:.1%}",
-                        delta=None
-                    )
-                
-                st.info(f"🎓 **Explicação da IA:** {predicao['explicacao']}")
-            
-            # === DADOS TÉCNICOS (PARA CURIOSOS) ===
-            with st.expander("🔧 Dados Técnicos da IA", expanded=False):
-                if st.session_state.perguntas and st.session_state.indice < len(st.session_state.perguntas):
-                    if 'features_utilizadas' in predicao:
-                        st.markdown("#### Features do Modelo Preditivo")
-                        features = predicao['features_utilizadas']
-                        st.json(features)
+            if estudados:
+                for tema, nivel in estudados.items():
+                    if nivel == "DOMINADO":
+                        st.success(f"{tema} - Dominado")
+                    elif nivel == "AVANCADO":
+                        st.info(f"{tema} - Quase lá")
+                    elif nivel == "INTERMEDIARIO":
+                        st.warning(f"{tema} - Progredindo")
+                    elif nivel == "BASICO":
+                        st.error(f"{tema} - Começando")
                     else:
-                        st.info("💡 Features do modelo serão exibidas após o modelo ser treinado com mais dados.")
+                        st.info(f"{tema} - Iniciante")
+            else:
+                st.info("Faça mais questões para ver seu progresso!")
+        
 
 st.markdown("---")
 st.caption("Desenvolvido como assistente de estudos.")
