@@ -30,7 +30,7 @@ source .venv/bin/activate
 # instalar dependências
 pip install -r requirements.txt
 ```
-
+py --version
 ## Interface Web (Streamlit)
 Interface principal para usar o agente de estudos
 
@@ -115,6 +115,8 @@ assistente_estudos/
 ![Tela de desempenho](prints/desempenho.png)
 
 ![Gráfico e avaliação do agente](prints/pizzagraph.png)
+
+![Aba o que estudar](prints/oqueEstudar.png)
 
 ![PDF](prints/pdf.png)
 
