@@ -7,8 +7,8 @@
 
 ## Integrantes do Grupo
 * Emilly Vitória Rodrigues Gomes Félix (20230067429)
-* Nome Completo (Matrícula)
-* Nome Completo (Matrícula)
+* Luana Karoline de Sousa Oliveira 
+* Raquel Brena Silva De Lima 
 
 ## Descrição do Projeto
 Aplicação em **Python** com **linha de comando (CLI)** e **interface Web em Streamlit** para um **Agente Inteligente de Estudos Personalizados (AIEP)**.  

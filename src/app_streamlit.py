@@ -114,7 +114,8 @@ def reiniciar_sessao():
         dificuldade=None if dificuldade == "(todas)" else dificuldade,
     )
 
-    # Evita repetir questões fáceis que já foram acertadas por este aluno
+    # Tenta evitar repetir questões fáceis que já foram acertadas
+    qs_filtradas = qs.copy()
     if aluno_id.strip():
         df_hist = carregar_historico(aluno_id.strip())
         if not df_hist.empty:
@@ -126,9 +127,9 @@ def reiniciar_sessao():
                 ]["pergunta_id"]
             )
             if dificuldade.lower() == "facil":
-                qs = [q for q in qs if q.get("id") not in ids_faceis_acertadas]
+                qs_filtradas = [q for q in qs if q.get("id") not in ids_faceis_acertadas]
             elif dificuldade == "(todas)":
-                qs = [
+                qs_filtradas = [
                     q
                     for q in qs
                     if not (
@@ -136,9 +137,13 @@ def reiniciar_sessao():
                         and q.get("id") in ids_faceis_acertadas
                     )
                 ]
+    
+    # Se não sobrou nenhuma questão após filtro, usa todas disponíveis
+    if not qs_filtradas:
+        qs_filtradas = qs
 
-    shuffle(qs)
-    st.session_state.perguntas = qs[:quantidade]
+    shuffle(qs_filtradas)
+    st.session_state.perguntas = qs_filtradas[:quantidade]
     if st.session_state.perguntas:
         st.session_state.inicio_tempo = time.time()
     else:
